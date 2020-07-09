@@ -1,0 +1,8 @@
+config.php
+avatar/ldap_config.inc.php
+avatar/cache/*
+avatar/pictures/*
+css/.sass-cache
+static
+.htaccess
+*.DS_Store

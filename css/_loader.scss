@@ -1,0 +1,27 @@
+@mixin loading-animation($speed) {
+	animation: $speed linear 0s normal none infinite rot;
+}
+#directory-loading {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 20px;
+  position: relative; 
+}
+.loading {
+	border: 6px solid #c0ddf2;
+	border-top-color: #2277b3;
+	border-radius: 100%;
+	display: inline-block;
+	height: 10px;
+	margin-right: .5em;
+	margin-top: -.375em;
+	position: relative;
+	top: .5em;
+	width: 10px;
+	@include loading-animation(.8s);
+}
+
+@keyframes rot {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(359deg);}
+}
